@@ -1,0 +1,45 @@
+name: Sync streaming rules
+
+on:
+  schedule:
+    - cron: '25 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download pinned sing-box compiler
+        shell: bash
+        run: |
+          mkdir -p .work
+          curl -fL --retry 3 -o .work/sing-box.tar.gz \
+            https://github.com/SagerNet/sing-box/releases/download/v1.14.2/sing-box-1.14.2-linux-amd64.tar.gz
+          echo 'a684484d7477d1437282ee411f4d131d0340aaad60a7868841ebd5d87dd8a0c6  .work/sing-box.tar.gz' | sha256sum -c -
+          tar -xzf .work/sing-box.tar.gz -C .work
+      - name: Merge upstream rules and compile
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/sync.mjs --sing-box .work/sing-box-1.14.2-linux-amd64/sing-box
+      - name: Open review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/streaming-upstream-sync
+          commit-message: 'Sync streaming rules from upstream'
+          title: 'Sync streaming rules from upstream'
+          body: |
+            Automated update from the repositories listed in `sources.json`.
+            Review the domain diff and `sources.lock.json` before merging.
+          add-paths: |
+            rules/streaming.json
+            rules/streaming.srs
+            sources.lock.json

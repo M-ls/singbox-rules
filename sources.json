@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "repositories": [
+    {
+      "name": "MetaCubeX geosite",
+      "repo": "MetaCubeX/meta-rules-dat",
+      "ref": "sing",
+      "directory": "geo/geosite",
+      "sets": [
+        "abema", "bahamut", "bbc", "bilibili", "dazn", "discoveryplus",
+        "disney", "espn", "hbo", "hulu", "iqiyi", "kktv", "netflix",
+        "primevideo", "radiko", "spotify", "tvb", "viu", "youtube"
+      ]
+    },
+    {
+      "name": "DustinWin media services",
+      "repo": "DustinWin/ruleset_geodata",
+      "ref": "sing-box-ruleset",
+      "directory": "",
+      "sets": [
+        "appletv", "bilibili", "disney", "max", "netflix", "primevideo",
+        "spotify", "tiktok", "youtube"
+      ]
+    }
+  ]
+}
