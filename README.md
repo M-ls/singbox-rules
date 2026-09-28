@@ -6,12 +6,12 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `rules/streaming.json` / `rules/streaming.srs` | 流媒体聚合规则，供专用流媒体出口使用 |
+| `rules/streaming.json` / `rules/streaming.srs` | 以流媒体为主的聚合规则，另含少量 AI 域名，共用专用出口 |
 | `rules/non-cn.json` / `rules/non-cn.srs` | 历史兼容规则，混合多个服务类别，不应当作纯流媒体规则 |
 
 `streaming` 从 `overrides/streaming-seed.json` 和 `sources.json` 中指定的 28 个上游服务规则合并，去重并按字典序输出。`sources.lock.json` 记录每个上游文件对应的提交和内容哈希。只提取域名、域名后缀、域名关键词和域名正则；不合并 IP 规则，因此不会把共享 CDN 的 IP 整段划给流媒体。
 
-本地 seed 补充上游未覆盖的流媒体服务域名，并剔除不适合纳入流媒体分类的条目。它由维护者审阅；上游同步不会覆盖它。
+本地 seed 补充上游未覆盖的服务域名，包括指定的 AI 服务域名。它由维护者审阅；上游同步不会覆盖它。
 
 ## 更新与上游同步
 
@@ -28,7 +28,7 @@ node scripts/sync.mjs --check --sing-box path/to/sing-box
 
 ## 接入 sing-box
 
-创建一个专用于流媒体的出站选择器，例如 `streaming-out`，并将支持转发域名的代理出站加入其中。示例中的标签和入站名称应按实际配置调整。
+创建一个专用于此规则集的出站选择器，例如 `streaming-out`，并将支持转发域名的代理出站加入其中。规则集内的 AI 域名也会使用这个出口。示例中的标签和入站名称应按实际配置调整。
 
 在 `route.rules` 中，将流媒体规则放在通用 `resolve` 规则之前：
 
