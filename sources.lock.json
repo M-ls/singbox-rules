@@ -367,11 +367,11 @@
     }
   ],
   "output": {
-    "sha256": "d37edc01d33d7586b8e5b0d7ec2c1da3429cc54e73e971fb4402ac86405f392b",
-    "total": 1184,
+    "sha256": "73dc054d1106c028df24498eb984e7d3167db6c899e1c62d24c83cc5505e05a7",
+    "total": 1185,
     "count": {
       "domain": 230,
-      "domain_suffix": 939,
+      "domain_suffix": 940,
       "domain_keyword": 9,
       "domain_regex": 6
     }
