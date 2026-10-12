@@ -4,7 +4,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/abema",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/abema.json",
       "sha256": "14b24118ba2b06cd47f0ef0aaaccd96d7b5b340abf0d8a2fbcc640ac16054d19",
       "count": {
@@ -17,7 +17,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/bahamut",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/bahamut.json",
       "sha256": "797dfd9092fb286d499935ec60d8e9738a5ba4eb856b566da6e034b084bb875e",
       "count": {
@@ -30,7 +30,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/bbc",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/bbc.json",
       "sha256": "6d455e708768d4c8d6ba5fb732b9f335cb8f7f66894a98f4f8f18fa87ef0d0c7",
       "count": {
@@ -43,9 +43,9 @@
     {
       "name": "MetaCubeX/meta-rules-dat/bilibili",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/bilibili.json",
-      "sha256": "9117021306fc1740d5030e64b0747f2e637f31889699bc554779df8604be1dd0",
+      "sha256": "ce67ef1592d49d39079d27dc132cb5490658589710e99631bc39786915f35bb3",
       "count": {
         "domain": 1,
         "domain_suffix": 52,
@@ -56,7 +56,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/dazn",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/dazn.json",
       "sha256": "ba842cd5960525dde0370c593f5cc471e748a51d7253f28f4a049316022c8732",
       "count": {
@@ -69,7 +69,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/discoveryplus",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/discoveryplus.json",
       "sha256": "7d8b9dcdc5d06b0df625c812cb9d2c3e74931f8e9c2c12714c95336d39b590b2",
       "count": {
@@ -82,9 +82,9 @@
     {
       "name": "MetaCubeX/meta-rules-dat/disney",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/disney.json",
-      "sha256": "ded7332d1f23df54de0b201655223f4a3126454dee6779f31d71668ca4ca7d95",
+      "sha256": "8a694a3e9672ddb844f6c0dfb1bb8f00f56403a1eddcbc7a577143cdd3009230",
       "count": {
         "domain": 6,
         "domain_suffix": 218,
@@ -95,7 +95,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/espn",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/espn.json",
       "sha256": "762435a8d83f84a67fe9306a700fae58118a602213db155224478e145806a1c7",
       "count": {
@@ -108,7 +108,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/hbo",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/hbo.json",
       "sha256": "c82c419db2b5955ecd1340a3c2b3be5ae7c3783215ee454f556599b8f9fe67cc",
       "count": {
@@ -121,7 +121,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/hulu",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/hulu.json",
       "sha256": "5c53c5d8f1e3821748e2ae762eddef21cb9c4cc026e3bea42865b42ec7039e5f",
       "count": {
@@ -134,7 +134,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/iqiyi",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/iqiyi.json",
       "sha256": "e1dba9e433adbb31b74bf8ed2c7f537be5d4198f60382d38f8fedc1a94c6fb58",
       "count": {
@@ -147,7 +147,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/kktv",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/kktv.json",
       "sha256": "99febbacd98af0867bca616595831cf4e36c374e2ac6e7d324dcf5e682b35396",
       "count": {
@@ -160,7 +160,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/netflix",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/netflix.json",
       "sha256": "864e0498a34dbf37286622ef971219fab8273521598b12fc384ba1cf99b01553",
       "count": {
@@ -173,7 +173,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/primevideo",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/primevideo.json",
       "sha256": "625a2a59a5604a598071418377c1dcccaa50f7a6f7d62b759de32815a793cbd5",
       "count": {
@@ -186,7 +186,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/radiko",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/radiko.json",
       "sha256": "905089b326d43c02b44b8912309a3ed36a291d03a2d4888808aeedfb23693c7d",
       "count": {
@@ -199,7 +199,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/spotify",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/spotify.json",
       "sha256": "d35a30eed63f26a8b17fbc4fedaf1ac3b2767586e89c36efe31445168f088ce6",
       "count": {
@@ -212,7 +212,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/tvb",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/tvb.json",
       "sha256": "da7d25f92d17cc089697f629fa34076d789cd7ca06c9cc44d5ba9185ad57bf24",
       "count": {
@@ -225,7 +225,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/viu",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/viu.json",
       "sha256": "e8897f78c9dc66037ae135496f5efd4665016deaddbe977b3ebd1539fc6bc610",
       "count": {
@@ -238,7 +238,7 @@
     {
       "name": "MetaCubeX/meta-rules-dat/youtube",
       "repo": "MetaCubeX/meta-rules-dat",
-      "commit": "739838017cc4632f9961e6010c74f45a4e4ad37f",
+      "commit": "99d991799d154e4a1ed50394081d5bacaa0d31ec",
       "file": "geo/geosite/youtube.json",
       "sha256": "d184b8c982701daabd1a9256fba5eb06abca9613373e23fba98419c9ed776fa3",
       "count": {
@@ -251,7 +251,7 @@
     {
       "name": "DustinWin/ruleset_geodata/appletv",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "appletv.json",
       "sha256": "ba76618ece16311660c7a333f4e4cecb039c82f4327c207e2e2e503369144554",
       "count": {
@@ -264,7 +264,7 @@
     {
       "name": "DustinWin/ruleset_geodata/bilibili",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "bilibili.json",
       "sha256": "50b7f3a9a4e66f83e4157c94e5b063631b637135e395f3cc54f835919d2ee422",
       "count": {
@@ -277,7 +277,7 @@
     {
       "name": "DustinWin/ruleset_geodata/disney",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "disney.json",
       "sha256": "258850416d1f09ba6dcd7bc00a6a3c913f57a98ecd92e749edd3ae7086cec5b0",
       "count": {
@@ -290,7 +290,7 @@
     {
       "name": "DustinWin/ruleset_geodata/max",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "max.json",
       "sha256": "b0f75028acb642dc25eccbaed48cd823f258d208a4b6a9091263f49b9f843cf3",
       "count": {
@@ -303,7 +303,7 @@
     {
       "name": "DustinWin/ruleset_geodata/netflix",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "netflix.json",
       "sha256": "aac5fde4921c1de70a26123d969e815de77150c0f436874edecfceba468b8972",
       "count": {
@@ -316,7 +316,7 @@
     {
       "name": "DustinWin/ruleset_geodata/primevideo",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "primevideo.json",
       "sha256": "f9a8255b40981f4b74acff2eefd99c62d99fba3dc11e1d0fb75b3ae051a66fb2",
       "count": {
@@ -329,7 +329,7 @@
     {
       "name": "DustinWin/ruleset_geodata/spotify",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "spotify.json",
       "sha256": "ec57be8e3c8b66a0722b0664d19eae0114b252bb67630d5572365080f1a07630",
       "count": {
@@ -342,7 +342,7 @@
     {
       "name": "DustinWin/ruleset_geodata/tiktok",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "tiktok.json",
       "sha256": "ec176278c4e8da411e6263c71b03df44a128d233976b75756d7781e337cc45d7",
       "count": {
@@ -355,7 +355,7 @@
     {
       "name": "DustinWin/ruleset_geodata/youtube",
       "repo": "DustinWin/ruleset_geodata",
-      "commit": "48ef2cae07564b7dbf1fdb380bd4b61ee2256756",
+      "commit": "4be131702e1710c9e509aa8723df617d1b2becf0",
       "file": "youtube.json",
       "sha256": "7613438099552d4e1a844f6108a4628b4049f22cf0fdd6449c9d020583c268dc",
       "count": {
