@@ -13,8 +13,8 @@ jobs:
   sync:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: Download pinned sing-box compiler
@@ -30,9 +30,11 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/sync.mjs --sing-box .work/sing-box-1.14.2-linux-amd64/sing-box
       - name: Open review pull request
-        uses: peter-evans/create-pull-request@v7
+        if: github.repository == 'M-ls/singbox-rules'
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
           branch: automation/streaming-upstream-sync
           commit-message: 'Sync streaming rules from upstream'
           title: 'Sync streaming rules from upstream'
