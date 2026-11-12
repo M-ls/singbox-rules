@@ -7,7 +7,10 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+
+concurrency:
+  group: streaming-upstream-sync
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -29,19 +32,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/sync.mjs --sing-box .work/sing-box-1.14.2-linux-amd64/sing-box
-      - name: Open review pull request
+      - name: Commit updated rules
         if: github.repository == 'M-ls/singbox-rules'
-        uses: peter-evans/create-pull-request@v8
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
-          branch: automation/streaming-upstream-sync
-          commit-message: 'Sync streaming rules from upstream'
-          title: 'Sync streaming rules from upstream'
-          body: |
-            Automated update from the repositories listed in `sources.json`.
-            Review the domain diff and `sources.lock.json` before merging.
-          add-paths: |
-            rules/streaming.json
-            rules/streaming.srs
-            sources.lock.json
+        shell: bash
+        run: |
+          git add -- rules/streaming.json rules/streaming.srs sources.lock.json
+          if git diff --cached --quiet; then
+            echo 'Streaming rules are unchanged.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Sync streaming rules from upstream'
+          git push origin HEAD:main

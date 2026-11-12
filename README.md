@@ -24,7 +24,7 @@ node scripts/sync.mjs --check --sing-box path/to/sing-box
 
 脚本先把两个上游仓库的分支固定到本次运行的提交，再下载列出的 JSON 文件。任何文件下载或解析失败都会停止，不会生成部分更新。与现有规则相比，条目减少超过 15% 或增加超过 50% 时也会停止，须审阅后显式传入 `--allow-large-change`。
 
-`.github/workflows/sync-streaming.yml` 每周运行一次，也可手动触发；变化会提出 PR，**不会自动合并到 `main`**。PR 中检查 `rules/streaming.json` 的域名差异及 `sources.lock.json` 的上游来源。CI 使用固定版本和 SHA-256 校验的 sing-box 编译器。GitHub 仓库需要允许 Actions 创建 PR；如果此设置关闭，手动运行上述命令并提交即可。
+`.github/workflows/sync-streaming.yml` 每周运行一次，也可手动触发。同步和编译成功后，有变化就自动提交上述规则文件及 `sources.lock.json` 到本仓库的 `main`；没有变化就不提交。CI 使用固定版本和 SHA-256 校验的 sing-box 编译器。异常下载、解析错误或超出数量保护范围时不会更新 `main`。
 
 ## 接入 sing-box
 
